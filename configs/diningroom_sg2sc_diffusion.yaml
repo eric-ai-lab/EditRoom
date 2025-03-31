@@ -1,0 +1,36 @@
+data:
+    dataset_type: "threedfront_diningroom"
+    encoding_type: "sincos_angle_graph_sg2sc"
+    augmentations: [] # ["fixed_rotation"]
+    annotation_file: "configs/diningroom_threed_front_splits.csv"
+    path_to_invalid_scene_ids: "configs/invalid_threed_front_rooms.txt"
+    path_to_invalid_bbox_jids: "configs/black_list.txt"
+    path_to_floor_plan_textures: "configs/floor_plan_texture_images"
+    filter_fn: "threed_front_diningroom"
+    train_stats: "dataset_stats.txt"
+    room_layout_size: "64,64"
+    max_length: 21
+
+model:
+    name: "sg2sc_model"
+
+training:
+    splits: ["train", "val"]
+    epochs: 300
+    steps_per_epoch: 500
+    batch_size: 1024
+    save_frequency: 10
+    log_frequency: 1
+    optimizer:
+        name: "adamw"
+        lr: 0.001
+        weight_decay: 0.02
+    loss_weights:
+        pos_mse: 1.
+        size_mse: 1.
+        angle_mse: 1.
+
+validation:
+    splits: ["test"]
+    batch_size: 256
+    frequency: 1

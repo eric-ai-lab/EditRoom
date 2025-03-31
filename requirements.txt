@@ -1,0 +1,21 @@
+torch
+torchvision
+lightning
+scipy
+imageio
+trimesh
+shapely
+clean-fid
+tensorboard
+nltk
+einops
+transformers
+diffusers
+pyrender
+opencv-python
+sentence_transformers
+open_clip_torch
+wandb
+openai
+accelerate
+flash-attn --no-build-isolation
