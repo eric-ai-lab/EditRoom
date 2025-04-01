@@ -1,4 +1,4 @@
-# EditRoom: LLM-parameterized Graph Diffusion for Composable 3D Room Layout Editing
+# [ICLR 2025] EditRoom: LLM-parameterized Graph Diffusion for Composable 3D Room Layout Editing
 
 Kaizhi Zheng, Xiaotong Chen, Xuehai He, Jing Gu, Linjie Li, Zhengyuan Yang, Kevin Lin, Jianfeng Wang, Lijuan Wang, Xin Eric Wang
 
